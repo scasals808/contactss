@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid lightsteelblue;
+    grid-template-columns: 0.25fr 0.75fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . . . .";
+}
+
+.grid-container > div {
+    padding: .5em;
+    align-self: center;
+    justify-self: center;
+}
+
+.grid-container > th {
+    grid-template-rows: 80px;
+    padding: .5em;
+    align-self: center;
+    justify-self: center;
+}
+.grid-container:hover {
+    background: burlywood;
+}
+span {
+    font-weight: bolder;
+}
