@@ -8,21 +8,52 @@
     grid-template-areas: ". . . . .";
 }
 
+.grid-container-content {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid lightsteelblue;
+    grid-template-columns: 0.35fr 0.45fr 0.15fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . . . .";
+}
+
+.grid-container-content-form{
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid lightsteelblue;
+    grid-template-columns: 0.35fr 0.45fr 0.15fr 1fr 1fr 1fr 0.15fr;
+    gap: 0px 0px;
+    grid-template-areas: ". . . . .";
+}
+
 .grid-container > div {
     padding: .5em;
     align-self: center;
     justify-self: center;
 }
 
-.grid-container > th {
-    grid-template-rows: 80px;
+.grid-container-content > div {
     padding: .5em;
     align-self: center;
     justify-self: center;
 }
-.grid-container:hover {
-    background: burlywood;
+
+.grid-container-content-form > div {
+    padding: .5em;
+    align-self: center;
+    justify-self: center;
 }
+
+.column {
+    grid-row: auto;
+}
+
+.grid-container:hover {
+    background: honeydew;
+}
+
 span {
     font-weight: bolder;
 }
